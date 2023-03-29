@@ -1,9 +1,11 @@
 import { supabase } from "$lib/supabaseClient";
 
 export async function load() {
-  let { data } = await supabase.from('rpg_player').select();
+  let { players } = await supabase.from('rpg_player').select();
+  let { items } = await supabase.from('rpg_items').select();
 
   return {
-    players: data ?? [],
+    players: players ?? [],
+    items: items ?? []
   };
 }
