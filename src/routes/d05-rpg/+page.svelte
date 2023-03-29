@@ -14,7 +14,7 @@
 <p>No players found</p>
 {/if}
 
-<h2>Available Items</h2>
+<!-- <h2>Available Items</h2>
 {#if data.items.length > 0}
 <ul>
   {#each data.items as item}
@@ -23,4 +23,4 @@
 </ul>
 {:else}
 <p>No items found</p>
-{/if}
+{/if} -->
